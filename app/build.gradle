@@ -21,6 +21,7 @@ android {
         jvmTarget = "1.8"
     }
 
+
     defaultConfig {
         applicationId "com.pondero.newsapp"
         minSdkVersion 22
