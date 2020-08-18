@@ -1,24 +1,18 @@
-package com.pondero.newsapp
+package com.pondero.newsapp.app.booting
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.recyclerview.widget.RecyclerView
-import com.pondero.newsapp.app.booting.selected_country.adapters.SlideViewPagerAdapter
-import com.pondero.newsapp.core.ui.animations.AnimationCompositePageTransformer
-import com.pondero.newsapp.databinding.ActivityMainBinding
+import com.pondero.newsapp.R
 
-class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding : ActivityMainBinding
+class MainBootingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setupView()
+        setContentView(R.layout.activity_main_booting)
     }
 
+    @SuppressLint("ResourceType")
     private fun setupView() {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
         with(binding.pager){

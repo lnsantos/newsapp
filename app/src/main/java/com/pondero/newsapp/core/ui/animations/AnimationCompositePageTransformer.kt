@@ -10,13 +10,12 @@ object AnimationCompositePageTransformer {
     fun sendAnimation() : CompositePageTransformer = run {
         CompositePageTransformer().apply {
             addTransformer(marginPageConfig)
-            addTransformer(viewPagerTransformer)
+            addTransformer { page, position ->
+                val right = 1 - abs(position)
+                page.scaleY = ((0.70 + right * 0.30f).toFloat())
+            }
         }
     }
 
     private val marginPageConfig = MarginPageTransformer(40)
-    private val viewPagerTransformer = ViewPager2.PageTransformer { page, position ->
-            val right = 1 - abs(position)
-            page.scaleY = ((0.70 + right * 0.30f).toFloat())
-        }
 }

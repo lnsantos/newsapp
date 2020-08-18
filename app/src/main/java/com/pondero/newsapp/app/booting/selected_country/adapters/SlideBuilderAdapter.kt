@@ -1,8 +1,8 @@
-package com.pondero.newsapp.app.selectedCountry.adapters
+package com.pondero.newsapp.app.booting.selected_country.adapters
 
 import android.content.res.Resources
 import androidx.viewpager2.widget.ViewPager2
-import com.pondero.newsapp.app.selectedCountry.adapters.states.SlideBuilderStateAdapter
+import com.pondero.newsapp.app.booting.selected_country.adapters.states.SlideBuilderStateAdapter
 
 class SlideBuilderAdapter : SlideBuilderStateAdapter{
 

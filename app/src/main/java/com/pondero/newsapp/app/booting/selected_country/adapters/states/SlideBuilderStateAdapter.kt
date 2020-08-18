@@ -1,4 +1,4 @@
-package com.pondero.newsapp.app.selectedCountry.adapters.states
+package com.pondero.newsapp.app.booting.selected_country.adapters.states
 
 import android.content.res.Resources
 import androidx.viewpager2.widget.ViewPager2

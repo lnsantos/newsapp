@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transition xmlns:Android="http://schemas.android.com/apk/res/android">
+    <!-- use whatever drawables you want, gradients, shapes etc-->
+    <item Android:drawable="@drawable/background_start_gradient" />
+    <item Android:drawable="@drawable/background_end_gradient" />
+</transition>
