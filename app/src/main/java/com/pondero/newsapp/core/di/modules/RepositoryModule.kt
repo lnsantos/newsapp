@@ -1,4 +1,4 @@
-package com.pondero.newsapp.core.di
+package com.pondero.newsapp.core.di.modules
 
 import dagger.Module
 
